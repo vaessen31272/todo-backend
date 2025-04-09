@@ -1,0 +1,107 @@
+# REQUIREMENTS
+## FUNCTIONAL REQUIREMENTS
+### CORE FEATURES
+# [x] Create tasks
+#      - Add task functionality 
+#      - Mark a task when completed
+#      - Display the non-completed and completed tasks in the UI
+     
+
+
+# [x] Mark as complete tasks:    
+#     - Button 'mark as complete' should be available to mark a task as complete.
+
+# [x] Delete tasks:
+#     -  Based of an ID, button 'delete' should be available to delete a task.
+
+# [x]  View tasks:
+#     -  Display all tasks (non-completed as completed)
+#     -  View a single tasks
+
+
+# ### DOCKERFILE ####
+# [x]  Dockerfile backend app.py
+
+    # install dependencies 
+        # flask: A lightweight web framework for building the backend application.
+        flask==2.2.3
+        # flask-cors: A library to enable Cross-Origin Resource Sharing (CORS) for your Flask application.
+        flask-cors==3.0.10
+        # flask-sqlalchemy: Adds SQLAlchemy support to Flask for database interactions.
+        flask-sqlalchemy==2.5.1
+        # sqlalchemy: A database toolkit and ORM library for working with relational databases.
+        sqlalchemy==1.4.39
+        # gunicorn: A production-ready WSGI server to run your Flask app in the container.
+        gunicorn==20.1.0
+    
+        werkzeug==2.2.3
+
+
+    #  Start the app:
+    #  - docker build -t flask-todo-app .
+    #  - docker run -p 5000:5000 flask-todo-app
+    #  - The app is now accessible at http://localhost:5000
+
+
+## NON FUNCTIONAL REQUIREMENTS
+# [X]   Usability:
+#       - App should have an intuitive UI/UX
+#       - Provide clear navigation (e.g. add task button, mark and delete button )
+
+# [X]   Performance:
+#       - Load tasks quickly from db
+
+# [X]   Scalability:
+#       - Should handle a growing number of tasks without performance loss
+
+# [x]   Reliability
+#       - Ensure the app has no data loss
+
+# ### TECHNICAL REQUIREMENTS
+
+# [x]  front-End(UI):
+#     - Web: React
+
+# [x]   Back-End(API):
+#     -  API Development:  RESTfull(Python with Flask)
+
+ 
+# [x]  Database:
+#     -  SQLite
+
+
+
+# ###  REACT TODO_APP SET-UP AND RUN INSTRUCTIONS ####
+
+# [x] Frontend:
+
+#     React (with hooks like useState and useEffect)
+#     Tailwind CSS for styling
+#     React Icons
+
+# [X] Backend:
+
+#     Flask with Flask-SQLAlchemy for managing the database.
+
+#     SQLite as the database solution.
+
+#     Flask-CORS for cross-origin resource sharing.
+
+# [x]  Setup:
+
+#     1. Clone the Repository:
+#         git clone https://github.com/your-username/todo-app.git
+#         cd todo-app
+#     2. Navigate to the Backend Directory:
+#         cd todo_backend        
+#     3. Set Up a Virtual Environment:
+#         python -m venv venv
+#         source venv/bin/activate   # For MacOS/Linux
+#         venv\Scripts\activate      # For Windows
+#     4. Run the Flask Server:
+#         python app.py
+#         The server will run on http://localhost:4000.
+
+# ### REQUIREMENTS ####
+
+
