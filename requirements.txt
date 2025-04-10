@@ -33,7 +33,7 @@
         sqlalchemy==1.4.39
         # gunicorn: A production-ready WSGI server to run your Flask app in the container.
         gunicorn==20.1.0
-    
+        # werkzeug: A comprehensive WSGI web application library for Python.
         werkzeug==2.2.3
 
 
