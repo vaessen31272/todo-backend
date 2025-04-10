@@ -22,5 +22,6 @@ EXPOSE 5000
 ENV FLASK_ENV=development
 
 # Command to run the Flask application
-CMD ["python", "app.py"]
+# CMD ["python", "app.py"]
+CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:10000", "app:app"]
 
